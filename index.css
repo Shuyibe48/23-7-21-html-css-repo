@@ -1,0 +1,276 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+/* common css */
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 ,h4, h5, h6{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+p{
+    color: #86899B;
+    line-height: 24px;
+}
+
+
+/* header */
+header{
+    background-image: url(images/baner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo a{
+    color: black;
+}
+.logo a h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.nav .navigation p{
+    color: #2F3035;
+}
+.nav .navigation p a{
+    color: #2F3035;
+    border-bottom: 1px solid;
+    transition: .3s;
+}
+.nav .navigation p a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+}
+
+/* slider */
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+.slider-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-content p{
+    color: #2F3035;
+    width: 498px;
+    text-align: center;
+    margin: 0;
+}
+
+/* form */
+.form{
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.form-child{
+    width: 720px;
+    background-color: #F9F9F9;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: 340px;
+    box-shadow: 0px 1px 1px rgba(47, 48, 53, 0.1), 0px 2px 6px rgba(47, 48, 53, 0.1);
+}
+.form-nati{
+    width: 50%;
+}
+.form-nati ul{
+    margin-left: 22px;
+    padding-left: 0;
+}
+.form-natni{
+   width: 50%;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+form label{
+    font-size: 1rem;
+    font-weight: 700;
+}
+form input{
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px rgba(47, 48, 53, 0.1), 0px 2px 4px rgba(47, 48, 53, 0.1);
+}
+form a{
+    padding: 15px;
+    background-color: #2F80ED;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 1px 1px rgba(47, 48, 53, 0.1), 0px 2px 4px rgba(47, 48, 53, 0.1);
+    transition: .3s;
+}
+form a:hover{
+    background-color: #6a9ee2;
+    color: black;
+}
+
+
+/* main part */
+.py-100{
+    padding-top: 164px;
+    padding-bottom: 100px;
+}
+.graper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.w-50{
+    width: 50%;
+}
+.w-main h5{
+    color: #86899B;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.d-child{
+    width: 15%;
+}
+.d-child i{
+    color: blueviolet;
+    font-size: 36px;
+}
+.d-d{
+    width: 85%;
+}
+.d-d h4{
+    margin-top: 0;
+}
+.ww-50{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* second of main */
+.s-main{
+    padding: 100px 0;
+    background-color: blueviolet;
+}
+.blue{
+    display: flex;
+}
+.blue-child{
+    width: 50%;
+    display: flex;
+}
+.a{
+    width: 15%;
+}
+.a i{
+    font-size: 36px;
+    color: #fff;
+}
+.b{
+    width: 85%;
+    color: #fff;
+}
+.b h4{
+    margin-top: 0;
+}
+.b p{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+/* responsive */
+@media (max-width: 688px) {
+    .nav{
+        flex-direction: column;
+    }
+    .logo a h1{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .nav .navigation p{
+        text-align: center;
+    }
+    .slider-content h1{
+        width: 250px;
+        text-align: center;
+    }
+    .slider-content p{
+        width: 250px;
+    }
+    .form-child{
+       flex-direction: column;
+       width: auto;
+       height: auto;
+       padding: 60px 0;
+    }
+    .form-nati{
+        margin-bottom: 30px;
+    }
+    form input{
+        padding: 15px;
+        width: 150px;
+        border-radius: 20px;
+    }
+    form a{
+        padding: 10px;
+        width: 150px;
+        line-height: 19px;
+    }
+    .graper{
+        flex-direction: column;
+    }
+    .d-child{
+        width: 40%;
+    }
+    .d-d{
+        width: 60%;
+    }
+    .ww-50{
+        margin-top: 50px;
+    }
+    .blue{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .a{
+        width: 40%;
+    }
+    .b{
+        width: 60%;
+    }
+}
